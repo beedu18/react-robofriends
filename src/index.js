@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 // import Hello from './Hello';
-import {robots} from './robots';
-import Card from './Card';
+//import Card from './Card';
+// import CardList from './CardList';
+import App from './App';
+// import {robots} from './robots';
 import 'tachyons';
 import reportWebVitals from './reportWebVitals';
+
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -16,9 +19,7 @@ import reportWebVitals from './reportWebVitals';
 // );
 ReactDOM.render(
   <React.StrictMode>
-    <Card name={robots[0].name} username={robots[0].username} id={robots[0].id}/>
-    <Card name={robots[1].name} username={robots[1].username} id={robots[1].id}/>
-    <Card name={robots[2].name} username={robots[2].username} id={robots[2].id}/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
