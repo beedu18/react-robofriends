@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
+
+h1 {
+    font-family: 'Stick No Bills', sans-serif;
+    color: #0ccac4;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #fff;
+    font-size: 4rem;
+}
