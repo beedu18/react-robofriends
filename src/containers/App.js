@@ -2,6 +2,7 @@ import React from "react";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import ScrollBox from "../components/ScrollBox";
+import Error from "../components/Error";
 import "./App.css";
 
 class App extends React.Component {
@@ -37,7 +38,7 @@ class App extends React.Component {
         console.log("render");
 
         const { robots, searchField } = this.state;
-        
+
         const filteredRobots = this.state.robots.filter(
             robot => robot.name
                 .toLowerCase()
@@ -59,7 +60,9 @@ class App extends React.Component {
                     <h1 className="mb3">Robofriends</h1>
                     <SearchBox searchChange = {this.onSearchChange}/>
                     <ScrollBox>
-                        <CardList robots = {filteredRobots} />
+                        <Error>
+                             <CardList robots = {filteredRobots} />
+                        </Error>
                     </ScrollBox>
                     
                 </div>
